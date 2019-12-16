@@ -8,7 +8,11 @@ namespace ServisTime
     /// <summary>
     /// Класс для работы с логикой
     /// </summary>
-  public  class Bl
+    // https://www.youtube.com/watch?v=Ier5xem-TTA&list=PL0lO_mIqDDFWOMqSKFaLypANf1W7-o87q&index=5&t=594s
+    // //План
+    // Сделать автозагрузку времени из прпиртес, работающий устанвщик минут
+
+    public class Bl
     {
         private const string  myServise = "W32Time";
         private int UpdatesMinute = 60;
