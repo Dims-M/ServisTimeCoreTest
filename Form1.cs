@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NuGet.Configuration;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -18,6 +19,8 @@ namespace ServisTime
         public Form1()
         {
             InitializeComponent();
+            //  this.Text += " " + Properties.Resources.String1; //  Settings.Default.Version; //Добавляем в название программы, версию.
+            textBoxNunMinutes.Text = Properties.Resources.GetMinutsDef;
         }
 
         //Запуск сервиса
@@ -27,7 +30,7 @@ namespace ServisTime
             servis.StartService();
         }
 
-        //Остоновка сервиса
+        //Остановка сервиса
         private void bеStopServis_Click(object sender, EventArgs e)
         {
             servis = new Bl();
@@ -101,6 +104,8 @@ namespace ServisTime
             {
                 MessageBox.Show("Введено число!");
                 servis.InitMinutes(n);
+               // Properties.Resources.GetMinutsDef  = "100";
+              //  Properties.Resources.Culture = "1";
             }
 
             else

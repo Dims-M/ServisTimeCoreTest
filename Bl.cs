@@ -89,5 +89,11 @@ namespace ServisTime
             return true;
         }
 
+        public int GettMinutes(int myMinutes)
+        {
+       
+            return UpdatesMinute;
+        }
+
     }
 }
